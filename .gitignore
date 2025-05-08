@@ -1,17 +1,27 @@
-.yarn/*
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-node_modules
+# dependencies
+/node_modules
 
-/*.tgz
+# next.js
+/.next/
+/out/
 
-build/
+# production
+/build
 
-.vscode/
-.idea/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Code Signing
-code-signing.pem
-code-signing.pem.pub
+# env files
+.env*
 
-# mprocs
-mprocs.log
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
